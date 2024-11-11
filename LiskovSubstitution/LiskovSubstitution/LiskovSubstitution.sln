@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovSubstitution", "LiskovSubstitution\LiskovSubstitution.csproj", "{CF7D9F8C-91CA-4348-8F45-DF39675D8525}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovSubstitution", "LiskovSubstitution\LiskovSubstitution.csproj", "{01636A40-7DFD-4F0D-98CA-6D2E09BE78AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CF7D9F8C-91CA-4348-8F45-DF39675D8525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF7D9F8C-91CA-4348-8F45-DF39675D8525}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF7D9F8C-91CA-4348-8F45-DF39675D8525}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF7D9F8C-91CA-4348-8F45-DF39675D8525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01636A40-7DFD-4F0D-98CA-6D2E09BE78AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01636A40-7DFD-4F0D-98CA-6D2E09BE78AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01636A40-7DFD-4F0D-98CA-6D2E09BE78AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01636A40-7DFD-4F0D-98CA-6D2E09BE78AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,9 @@
-﻿namespace LiskovSubstitution
+﻿/*
+ * do not declare again the properties if they already are in the base class
+ * instead that declare them in base as virtual and override them in the new class
+ */
+
+namespace LiskovSubstitution
 {
     public class Rectangle
     {
@@ -20,7 +25,7 @@
     public class Square : Rectangle
     {
         /*
-         * do not declare again Width and height 
+         * do not declare again Width and height
          */
         
         /*public new int Width
