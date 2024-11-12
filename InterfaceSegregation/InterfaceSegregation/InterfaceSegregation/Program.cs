@@ -6,11 +6,11 @@
 
 namespace InterfaceSegregation
 {
-    public class Demo
+    public abstract class Demo
     {
-        public class Document;
+        public abstract class Document;
 
-        public interface IMachine
+        private interface IMachine
         {
             void Print(Document d);
             void Scan(Document d);
@@ -76,18 +76,12 @@ namespace InterfaceSegregation
             }
         }
 
-        public interface IMultiFunctionDevice : IScanner, IPrinter;
+        private interface IMultiFunctionDevice : IScanner, IPrinter;
 
-        public class MultifunctionMachine : IMultiFunctionDevice
+        public class MultifunctionMachine(IPrinter printer, IScanner scanner) : IMultiFunctionDevice
         {
-            private IPrinter _printer;
-            private IScanner _scanner;
-
-            public MultifunctionMachine(IPrinter printer, IScanner scanner)
-            {
-                _printer = printer ?? throw new ArgumentNullException(paramName: nameof(printer));
-                _scanner = scanner ?? throw new ArgumentNullException(paramName: nameof(scanner));
-            }
+            private readonly IPrinter _printer = printer ?? throw new ArgumentNullException(paramName: nameof(printer));
+            private readonly IScanner _scanner = scanner ?? throw new ArgumentNullException(paramName: nameof(scanner));
 
             public void Print(Document d)
             {
@@ -99,8 +93,8 @@ namespace InterfaceSegregation
                 _scanner.Scan(d);
             }// decorator pattern
         }
-        
-        static void Main(string[] args)
+
+        private static void Main()
         {
             Console.WriteLine($"estamos arrancando el programa");
         }
