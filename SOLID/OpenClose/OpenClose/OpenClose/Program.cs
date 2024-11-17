@@ -1,6 +1,6 @@
 ﻿/*
  * The open closed principle states the entities as clases should be openned for extension
- * and not for modification, in this sample the Class ProductFilter if we need an extra
+ * but closed by modification, in this sample the Class ProductFilter if we need an extra
  * filter we need to modify this class ProductFilter, instead that we create a class BetterFilter to
  * extend filters , creating a new specification and adding that in AndSpecification as second or third
  */
