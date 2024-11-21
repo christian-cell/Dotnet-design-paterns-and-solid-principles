@@ -1,8 +1,5 @@
-using System.Text;
-
-namespace Builder
+﻿namespace Builder
 {
-    
     /*
      * BUILDER: 🧑‍🔧🛠️ : when construction gets a little bit too complicated.
      * Motivation: Some objects are simple and can be created in a single constructor call
@@ -14,110 +11,64 @@ namespace Builder
      * Whe piecewise object construction is complicated, provide an API for doing it succinctly
      */
     
-    public class HtmlElement
+    /*public class Person
     {
-        public string Name, Text;
-        public readonly List<HtmlElement> Elements = new List<HtmlElement>();
-        private const int IndentSize = 2;
-
-        public HtmlElement(string name, string text)
+        public string Name;
+        public string Position;
+        
+        public Person(string name, string position)
         {
-            Name = name ?? throw new ArgumentNullException(nameof(name));
-            Text = text ?? throw new ArgumentNullException(nameof(text));
+            Name = name;
+            Position = position;
         }
 
-        private string ToStringImpl(int indent)
-        {
-            var sb = new StringBuilder();
-            var i = new string(' ', IndentSize * indent);
-            sb.AppendLine($"{i}<{Name}>");
-
-            if (!string.IsNullOrWhiteSpace(Text))
-            {
-                sb.Append(new string(' ', IndentSize * ( indent + 1 )));
-                sb.AppendLine(Text);
-
-                
-            }
-
-            foreach (var e in Elements)
-            {
-                sb.Append(e.ToStringImpl(indent + 1));
-            }
-
-            sb.AppendLine($"{i}</{Name}>");
-
-            return sb.ToString();
-        }
+        public class Builder : PersonJobBuilder<Builder>;
+        public static Builder New => new Builder();
 
         public override string ToString()
         {
-            return ToStringImpl(0);
+            return $"{nameof(Name)} : {Name} , {nameof(Position)}, {Position}";
         }
     }
-    
-    public class HtmlBuilder
+
+    public abstract class PersonBuilder
     {
-        private readonly string _rootName;
-        HtmlElement _root = new HtmlElement("" , "");
+        protected readonly Person Person = new Person("","");
 
-        public HtmlBuilder(string rootName)
+        public Person Build()
         {
-            this._rootName = rootName;
-            _root.Name = rootName;
-        }
-
-        public HtmlBuilder AddChild(string childName, string chidText)
-        {
-            var e = new HtmlElement(childName, chidText);
-            _root.Elements.Add(e);
-
-            return this;
-        }
-
-        public override string ToString()
-        {
-            return _root.ToString();
-        }
-
-        public void Clear()
-        {
-            _root = new HtmlElement(_rootName , "");
+            return Person;
         }
     }
-    
-    public class FluentBuilder
+
+    public class PersonInfoBuilder<TSelf>:PersonBuilder where TSelf : PersonInfoBuilder<TSelf> 
     {
-        /*
-         * LIVE WITHOUT BUILDER PATTERN
-         */
-        static void /*Main*/ Mainy(string[] args)
+        public TSelf Called(string name)
         {
-            var hello = "hello";
-            var sb = new StringBuilder();
-            
-            sb.Append("<p>");
-            sb.Append(hello);
-            sb.Append("</p>");
-
-            var words = new[] { "hello", "world" };
-            sb.Clear();
-            sb.Append("<ul>");
-
-            foreach (var word in words)
-            {
-                sb.AppendFormat("<li>{0}</li>", word);
-            }
-
-            sb.Append("</ul>");
-            
-            Console.WriteLine(sb);
-
-            var builder = new HtmlBuilder("ul");
-            builder.AddChild("li", "hello").AddChild("li", "world");//Fluent Builder
-            
-            Console.WriteLine(builder.ToString());
+            Person.Name = name;
+            return (TSelf) this;
         }
     }
-};
 
+    public class PersonJobBuilder<TSelf> : PersonInfoBuilder<PersonJobBuilder<TSelf>> where TSelf : PersonJobBuilder<TSelf>
+    {
+        public TSelf WorkAsA(string position)
+        {
+            Person.Position = position;
+            return (TSelf) this;
+        }
+        
+    }
+
+    internal class FluentBuilder
+    {
+        public static void Main(string[] args)
+        {
+            var me = Person.New.Called("dimitri")
+                .WorkAsA("coder")
+                .Build();
+            
+            Console.WriteLine(me);
+        }
+    }*/
+}
