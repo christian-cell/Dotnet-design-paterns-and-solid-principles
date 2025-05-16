@@ -1,0 +1,15 @@
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\bin\Debug\net8.0\Prototype.Inheritance.exe
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\bin\Debug\net8.0\Prototype.Inheritance.deps.json
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\bin\Debug\net8.0\Prototype.Inheritance.runtimeconfig.json
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\bin\Debug\net8.0\Prototype.Inheritance.dll
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\bin\Debug\net8.0\Prototype.Inheritance.pdb
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\Prototype.Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\Prototype.Inheritance.AssemblyInfoInputs.cache
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\Prototype.Inheritance.AssemblyInfo.cs
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\Prototype.Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\Prototype.Inheritance.sourcelink.json
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\Prototype.Inheritance.dll
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\refint\Prototype.Inheritance.dll
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\Prototype.Inheritance.pdb
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\Prototype.Inheritance.genruntimeconfig.cache
+C:\Users\ChristianGarciaMarti\design_patterns_course\Prototype\Prototype.Inheritance\Prototype.Inheritance\obj\Debug\net8.0\ref\Prototype.Inheritance.dll
