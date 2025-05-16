@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Singleton.Implementation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f36baa5b7f21639d4dfaefe29b8b1bcb91287de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9a9a060328e6d8941521f92a51782c53f02ce15")]
 [assembly: System.Reflection.AssemblyProductAttribute("Singleton.Implementation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Singleton.Implementation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
