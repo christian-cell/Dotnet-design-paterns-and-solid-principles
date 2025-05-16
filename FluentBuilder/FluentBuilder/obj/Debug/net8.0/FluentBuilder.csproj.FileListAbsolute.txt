@@ -1,0 +1,15 @@
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\bin\Debug\net8.0\FluentBuilder.exe
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\bin\Debug\net8.0\FluentBuilder.deps.json
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\bin\Debug\net8.0\FluentBuilder.runtimeconfig.json
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\bin\Debug\net8.0\FluentBuilder.dll
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\bin\Debug\net8.0\FluentBuilder.pdb
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\FluentBuilder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\FluentBuilder.AssemblyInfoInputs.cache
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\FluentBuilder.AssemblyInfo.cs
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\FluentBuilder.csproj.CoreCompileInputs.cache
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\FluentBuilder.sourcelink.json
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\FluentBuilder.dll
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\refint\FluentBuilder.dll
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\FluentBuilder.pdb
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\FluentBuilder.genruntimeconfig.cache
+C:\Users\ChristianGarciaMarti\design_patterns_course\FluentBuilder\FluentBuilder\obj\Debug\net8.0\ref\FluentBuilder.dll

@@ -1,0 +1,15 @@
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\bin\Debug\net8.0\SimpleFactory.exe
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\bin\Debug\net8.0\SimpleFactory.deps.json
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\bin\Debug\net8.0\SimpleFactory.runtimeconfig.json
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\bin\Debug\net8.0\SimpleFactory.dll
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\bin\Debug\net8.0\SimpleFactory.pdb
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\SimpleFactory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\SimpleFactory.AssemblyInfoInputs.cache
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\SimpleFactory.AssemblyInfo.cs
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\SimpleFactory.csproj.CoreCompileInputs.cache
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\SimpleFactory.sourcelink.json
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\SimpleFactory.dll
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\refint\SimpleFactory.dll
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\SimpleFactory.pdb
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\SimpleFactory.genruntimeconfig.cache
+C:\Users\ChristianGarciaMarti\design_patterns_course\Factories\SimpleFactory\SimpleFactory\obj\Debug\net8.0\ref\SimpleFactory.dll
