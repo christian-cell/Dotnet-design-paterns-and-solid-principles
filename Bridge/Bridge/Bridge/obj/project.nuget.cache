@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "40wUWC1dn4MXobirzJ1cndE+TDb2Pc7lgbdRLcuxG93MwaSdNv4pdOPdwiaS4nh6TBGW5t6jiYncf0xCA9YZag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ChristianGarciaMarti\\design_patterns_course\\Bridge\\Bridge\\Bridge\\Bridge.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ChristianGarciaMarti\\.nuget\\packages\\autofac\\8.3.0\\autofac.8.3.0.nupkg.sha512",
+    "C:\\Users\\ChristianGarciaMarti\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.1\\system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
