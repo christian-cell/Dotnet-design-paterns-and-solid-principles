@@ -6,7 +6,6 @@ namespace Bridge
     /*
      *  The Bridge pattern allow disengage an abstraction of an implementation in order to both of them can
      *  independently vary 
-     * 
      */
 
     #region Interface
