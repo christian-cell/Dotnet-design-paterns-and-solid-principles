@@ -48,9 +48,9 @@
     #endregion
     
     
-    public class Program
+    public class Programr
     {
-        public static void Main(string[] args)
+        public static void Mainy(string[] args)
         {
             Adaptee adaptee = new Adaptee();
             ITarget target = new Adapter(adaptee);
