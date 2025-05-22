@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eE8QnS0ddoLOSDJA/WmbFRbcIRKfS6bWF6UIdLn1896h3w/XxZKPnBla+0IjaEKFK/dKoGuUcSCkCAqAMVf8XQ==",
+  "dgSpecHash": "GrSCttvB0nithtH/uA9W9deuP5IuXtk9Zh21cYI9F8ophzeGoRnTCjKcsmaV5cuP7qPdnOmeJXh8DwXis527mA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ChristianGarciaMarti\\design_patterns_course\\Factories\\SimpleFactory\\SimpleFactory\\SimpleFactory.csproj",
   "expectedPackageFiles": [],

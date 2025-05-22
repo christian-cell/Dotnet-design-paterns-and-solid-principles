@@ -1,110 +1,66 @@
-using System.Text;
-using BulkReplacement;
-
 namespace SimpleFactory
-{ 
-    public interface ITheme
+{
+
+    public interface IProduct
     {
-        string TextColor { get; }
-        string BgrColor { get; }
+        double GetTax();
     }
-
-    class LightTheme : ITheme
+    
+    public class Book : IProduct
     {
-        public string TextColor => "black";
-        public string BgrColor => "white";
-    }
-
-    class DarkTheme : ITheme
-    {
-        public string TextColor => "white";
-        public string BgrColor => "dark gray";
-    }
-
-    public class TrackingThemeFactory
-    {
-        private readonly List<WeakReference<ITheme>> themes = new();
-
-        public ITheme CreateTheme(bool dark)
+        public double GetTax()
         {
-            ITheme theme = dark ? new DarkTheme() : new LightTheme();
-            themes.Add(new WeakReference<ITheme>(theme));
-            return theme;
+            return 4.5;
         }
-        
-        public string Info
+    }
+    
+    public class Phone : IProduct
+    {
+        public double GetTax()
         {
-            get
-            {
-                var sb = new StringBuilder();
-                foreach (var reference in themes)
-                {
-                    if (reference.TryGetTarget(out var theme))
-                    {
-                        bool dark = theme is DarkTheme;
-                        sb.Append(dark ? "Dark" : "Light")
-                            .AppendLine(" theme");
-                    }
-                }
+            return 21.5;
+        }
+    }
+    
+    public class Pencil : IProduct
+    {
+        public double GetTax()
+        {
+            return 12.5;
+        }
+    }
 
-                return sb.ToString();
+    public enum ProductType
+    {
+        Book, Pencil,Phone
+    }
+
+    public class ProductFactory
+    {
+        public IProduct ProductHandler(ProductType productType)
+        {
+            switch (productType)
+            {
+                case ProductType.Book:
+                    return new Book();
+                case ProductType.Pencil:
+                    return new Pencil();
+                case ProductType.Phone:
+                    return new Phone();
+                default: return null;
             }
         }
     }
 
-    public class ReplaceableThemeFactory
+    public class Program
     {
-        private readonly List<WeakReference<Ref<ITheme>>> themes = new();
-
-        private ITheme createThemeImpl(bool dark)
+        public static void Main(string[] args)
         {
-            return dark ? new DarkTheme() : new LightTheme();
-        }
-
-        public Ref<ITheme> CreateTheme(bool dark)
-        {
-            var r = new Ref<ITheme>(createThemeImpl(dark));
-            themes.Add(new WeakReference<Ref<ITheme>>(r));
-            return r;
-        }
-
-        public void ReplaceTheme(bool dark)
-        {
-            foreach (var wr in themes)
-            {
-                if (wr.TryGetTarget(out var reference))
-                {
-                    reference.Value = createThemeImpl(dark);
-                }
-            }
+            var productFactory = new ProductFactory();
+            IProduct book = productFactory.ProductHandler(ProductType.Book);
+            double bookTax = book.GetTax();
+            
+            Console.Write($"the book has a tax of : {bookTax}");
         }
     }
-
-    public class Ref<T> where T : class
-    {
-        public T Value;
-
-        public Ref(T value)
-        {
-            Value = value;
-        }
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var factory = new TrackingThemeFactory();
-            var theme = factory.CreateTheme(true);
-            var theme2 = factory.CreateTheme(false);
-            Console.WriteLine(factory.Info);
-
-            var factory2 = new ReplaceableThemeFactory();
-            var magicTheme = factory2.CreateTheme(true);
-            Console.WriteLine(magicTheme.Value.BgrColor);
-            factory2.ReplaceTheme(false);
-            Console.WriteLine(magicTheme.Value.BgrColor);
-        }
-    }
-};
-
+}

@@ -34,7 +34,7 @@ namespace Strategy
     
     public class SwitchCase
     {
-        public static void Mainy(string[] args)
+        public static void Maini(string[] args)
         {
             CustomerSwitch customer = new CustomerSwitch(CustomerType.Regular);
 

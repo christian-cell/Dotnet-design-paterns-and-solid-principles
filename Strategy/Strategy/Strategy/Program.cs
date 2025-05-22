@@ -1,69 +1,69 @@
 ﻿namespace Strategy
 {
-    
-    /*
-     *  In SwitchCase file we have an example of a switch case method
-     *  And here we get the same functionality with STRATEGY pattern
-     */
+    #region interface
 
-    public interface IDiscountStrategy
+    public interface ICalculator
     {
-        double ApplyDiscount(double purchaseTotal);
+        double Calculate(double originalPrice);
     }
-    
-    public class RegularCustomerDiscount : IDiscountStrategy
+
+    #endregion
+
+    #region CalculatorHandlers
+
+    public class RegularClientCalculator: ICalculator
     {
-        public double ApplyDiscount(double purchaseTotal)
-        {
-            return purchaseTotal - purchaseTotal * 0.1;
+        public double Calculate(double originalPrice)
+        { 
+            return originalPrice - ( originalPrice * 0.10 );
         }
     }
     
-    public class PremiumCustomerDiscount : IDiscountStrategy
+    public class PremiumClientCalculator: ICalculator
     {
-        public double ApplyDiscount(double purchaseTotal)
-        {
-            return purchaseTotal - purchaseTotal * 0.2;
+        public double Calculate(double originalPrice)
+        { 
+            return originalPrice - ( originalPrice * 0.30 );
         }
     }
     
-    public class NewCustomerDiscount : IDiscountStrategy
+    public class NewClientCalculator: ICalculator
     {
-        public double ApplyDiscount(double purchaseTotal)
-        {
-            return purchaseTotal;
+        public double Calculate(double originalPrice)
+        { 
+            return originalPrice;
         }
     }
 
-    public class Customer
-    {
-        private IDiscountStrategy _discountStrategy;
+    #endregion
 
-        public Customer(IDiscountStrategy discountStrategy)
+    public class Client
+    {
+        private ICalculator _calculator;
+
+        public Client(ICalculator calculator)
         {
-            _discountStrategy = discountStrategy;
+            _calculator = calculator;
         }
 
-        public double ApplyDiscount(double purchaseTotal)
+        public double Calculate(double originalPrice)
         {
-            return _discountStrategy.ApplyDiscount(purchaseTotal);
-        }        
+            return _calculator.Calculate(originalPrice);
+        }
     }
-
+    
     public class Program
     {
         public static void Main(string[] args)
         {
-            var regularCustomer = new Customer(new RegularCustomerDiscount());
-
-            var premiumCustomer = new Customer(new PremiumCustomerDiscount());
+            var regularClient = new Client(new RegularClientCalculator());
+            var premiumClient = new Client(new PremiumClientCalculator());
+            var newClient = new Client(new NewClientCalculator());
             
-            var newCustomer = new Customer(new NewCustomerDiscount());
-            
-            Console.WriteLine(regularCustomer.ApplyDiscount(100.0));
-            Console.WriteLine(premiumCustomer.ApplyDiscount(100.0));
-            Console.WriteLine(newCustomer.ApplyDiscount(100.0));
-
+            Console.WriteLine($"the final price for regular client is : {regularClient.Calculate( 100 )}");
+            Console.WriteLine($"the final price for premium client is : {premiumClient.Calculate( 100 )}");
+            Console.WriteLine($"the final price for new client is : {newClient.Calculate( 100 )}");
         }
     }
-}
+};
+
